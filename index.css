@@ -5,7 +5,7 @@
   --navBarActive: #415d43;
   --bodyBackground: #b0bea9;
   --footerFont: #fefae0;
-  --buttonHover: #fdf5c0; 
+  --buttonHover: rgba(253, 245, 192,0.75); 
 }
 body {
     padding:20px;
@@ -42,10 +42,10 @@ body {
 .navbar a:hover {
     background-color: var(--navBarHover);
     color: var(--navBarFont);
-  }
+}
   
   /* Add a color to the active/current link */
-  .navbar a.active {
+.navbar a.active {
     background-color: var(--navBarActive);
     color: var(--navBarFont);
 }
@@ -67,6 +67,7 @@ body {
     margin-left: 20px;
 }
 
+/* pushing this column to the right */
 .right-column {
     float: left;
     width: 65%;
@@ -74,6 +75,7 @@ body {
     margin-left: 30px;
 }
 
+/* a contact button for clients to get directed to the contact page */
 .button1 {
     background-color: #dda15e;
     border: none;
@@ -87,6 +89,7 @@ body {
 .button1:hover {
     background-color: var(--buttonHover);
 }
+
 footer {
   margin-top: 25px;
   width: 100%;
