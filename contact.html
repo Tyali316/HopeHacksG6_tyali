@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <script defer src="form.js"></script> 
-  </head>
-  <body>
-    <!-- Nav bar start here -->
+    <script defer src="form.js"></script>
+    <link rel="stylesheet" href="/contact.css">
+    <link rel="dns-prefetch" href="https://www.iconfinder.com/social-media-icons">
+</head>
+<body>
+
     <header>
+    <!-- Nav bar start here -->
       <div class="navbar" id="myNavBar">
         <a href="/index.html">Home</a>
         <a href="/map_res.html">Resources</a>
@@ -18,7 +21,8 @@
         <input type="search" placeholder="What would you like to search for?" />
       </div>
     </header>
-    <!-- Nav bar ends here -->
+
+<!-- Nav bar ends here -->
     <main class="title">
       <h2>Contact Us</h2>
       <p>
@@ -28,11 +32,16 @@
       </p>
     </main>
     <p></p>
+    
     <!-- Form Start Here -->
+    
     <section class="contact_form">
+    
       <div id="error"></div>
       <form>
+      
         <!-- name input -->
+        
         <div>
           <label for="name">Name: </label>
           <input
@@ -42,12 +51,16 @@
             placeholder="Enter your name here."
           />
         </div>
+        
         <!-- phone input -->
         <div>
+        
           <label for="phone_number">Phone number: </label>
           <input type="tel" id="phone" placeholder="123-456-789" />
         </div>
+        
         <!-- email input -->
+        
         <label for="email">Email: </label>
         
         <input
@@ -71,14 +84,25 @@
         <br />
         <button id="submit">Submit</button>
         <input type="reset" />
-      </form>
-    </section>
+     </form>
+     
+</section>
 
-    <!-- Form Ends Here -->
-
-    <footer class="bottom-footer">
-      <!-- Footer info goes here. -->
-      <div id="footer-infor">"&copy;Plan It was Established in 2022."</div>
-    </footer>
-  </body>
+<footer class="bottom-footer">
+   <a href="https://twitter.com/Plan_it_h_o_p_e" class="icon">
+   <img src="file:///Users/tyaliwarren/Downloads/5296499_fb_facebook_facebook%20logo_icon.svg">
+   <span>Twitter</span>
+   </a>
+   <a href="https://www.facebook.com/" class="icon">
+    <span>Facebook</span>
+   </a>
+   <a href="https://www.instagram.com/" class="icon">
+    <span>Instagram</span>
+   </a>
+<!-- Footer info goes here. -->
+   <div id="footer-info">
+  "&copy;Plan It was Established in 2022."
+   </div>
+</footer>
+</body>
 </html>
