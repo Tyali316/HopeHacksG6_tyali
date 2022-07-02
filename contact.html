@@ -1,46 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <script defer src="form.js"></script>
+    
     <link rel="stylesheet" href="/contact.css">
     <link rel="dns-prefetch" href="https://www.iconfinder.com/social-media-icons">
 </head>
 <body>
     <header>
-        <div class="navbar" id="myNavBar">
-            <a href="/index.html" >Home</a>
-            <a href="/map_res.html">Resources</a>
-            <a href="/contact.html" class="active">Contact Us</a>
-            <label for="search">Search: </label>
-            <input type="search" placeholder="What would you like to search for?"/> 
-        </div>
+    <!-- Nav bar start here -->
+      <div class="navbar" id="myNavBar">
+        <a href="/index.html">Home</a>
+        <a href="/map_res.html">Resources</a>
+        <a href="/contact.html" class="active">Contact Us</a>
+        <label for="search">Search: </label>
+        <input type="search" placeholder="What would you like to search for?" />
+      </div>
     </header>
-<main class="title">
-    <h2> Contact Us </h2>
-    <p>Thank you for visiting our site, we hope you enjoyed it. If you would like to get more information or help contribute to saving the planet, please fill the form below.</p> 
-</main>
-<p></p>
-<section class="contact_form">
-    <form>
-        <label for="name">Name: </label>
-          <input type="text" id="name" name="name" placeholder="Enter your name here." required/>
-        <label for="phone_number">Phone number: </label>
-        <br>
-          <input type="tel" id="phone" name="phone" placeholder="012-345-6789" required />
-          <br>
+
+<!-- Nav bar ends here -->
+    <main class="title">
+      <h2>Contact Us</h2>
+      <p>
+        Thank you for visiting our site, we hope you enjoyed it. If you would
+        like to get more information or help contribute to saving the planet,
+        please fill the form below.
+      </p>
+    </main>
+    <p></p>
+    
+    <!-- Form Start Here -->
+    
+    <section class="contact_form">
+    
+      <div id="error"></div>
+      <form>
+      
+        <!-- name input -->
+        
+        <div>
+          <label for="name">Name: </label>
+          <input
+            type="text"
+            id="name"
+            
+            placeholder="Enter your name here."
+          />
+        </div>
+        
+        <!-- phone input -->
+        <div>
+        
+          <label for="phone_number">Phone number: </label>
+          <input type="tel" id="phone" placeholder="123-456-789" />
+        </div>
+        
+        <!-- email input -->
+        
         <label for="email">Email: </label>
-          <input type="text" id="email" name="email" placeholder="Please enter your email" required/>
-          <br>
+        
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Please enter your email"
+        />
+        <br />
+
         <label for="form1">How did you hear about us?</label>
-          <textarea id="form" name="form" rows="4" cols="50" placeholder="Enter your response here."></textarea>
-        <br> 
-        <input type="submit" value="Submit"/>
+
+        <textarea
+          id="form"
+          name="form"
+          rows="4"
+          cols="50"
+          placeholder="Enter your response here."
+        ></textarea>
+
+        <br />
+        <button id="submit">Submit</button>
         <input type="reset" />
      </form>
+     
 </section>
+
 <footer class="bottom-footer">
    <a href="https://twitter.com/Plan_it_h_o_p_e" class="icon">
    <img src="file:///Users/tyaliwarren/Downloads/5296499_fb_facebook_facebook%20logo_icon.svg">

@@ -1,3 +1,4 @@
+
 :root {
   --navBarBackg:#709775;
   --navBarHover: #111d13;
@@ -49,6 +50,220 @@ body {
     background-color: var(--navBarActive);
     color: var(--navBarFont);
 }
+/* */
+
+/* ========================================================== */
+/* Email Modal Start Here*/
+/* ========================================================== */
+.email-modal {
+    position: fixed;
+    inset: 55% 0 0 59%;
+  
+    width: 40vw;
+    height: 45vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    transition: all 0.4s ease-out;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  .email-modal--visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .email-modal__close-btn {
+    position: absolute;
+    left: 90%;
+  
+    padding: 0.8rem 0 0 1rem;
+    width: 50px;
+    height: 50px;
+  
+    display: inline-block;
+    z-index: 2;
+    cursor: pointer;
+  
+    background-color: #ffffff;
+    color: #000000;
+  
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    transition: border 0.2s linear;
+  }
+  
+  .email-modal__close-btn:hover {
+    border: 2px solid #7a7a7a;
+    transition: border 0.2s linear;
+  }
+  
+  .fa-xmark {
+    font-size: 20px;
+  }
+  
+  .email-modal__container {
+    background: #ffffff;
+    max-width: 700px;
+    width: 100%;
+    color: #000000;
+  
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    overflow: hidden;
+  
+    padding-left: 1rem;
+    border-radius: 30px;
+    box-shadow: 17px 18px 58px -4px rgba(0, 0, 0, 0.55);
+  }
+  
+  .email-modal__content {
+    width: 55%;
+    padding: 15px;
+  }
+  
+  .email-logo {
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+  
+  .email-modal__content .logo__img {
+    width: 100px;
+  }
+  
+  .email-modal__title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .email-modal__message {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
+  }
+  
+  .email-modal__form-group {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.7rem;
+    margin-bottom: 20px;
+  }
+  
+  .email-modal__input {
+    width: 90%;
+    padding: 0.6rem 1rem;
+  
+    border: 1px solid #252525;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .email-modal__button {
+    width: 90% !important;
+    border-radius: 0 !important;
+  }
+  
+  .email-modal__form-group--error {
+    border: 0px solid #000000;
+  }
+  
+  .email-modal__error-message {
+    display: none;
+    margin-bottom: 0.7rem;
+  
+    color: #b42f0d;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .email-modal__error-message--active {
+    display: block;
+  }
+  
+  .email-modal__input-error--active {
+    border: #b42f0d solid 2px;
+  }
+  
+  .email-modal__decline-offer {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .email-modal__decline-offer:hover {
+    color: #b42f0d;
+  }
+  
+  .email-modal__side-img {
+    width: 45%;
+    height: 400px;
+  }
+  
+  .email-modal__side-img > img {
+    width: 100%;
+  }
+  
+  .fa-circle-check {
+    font-size: 4rem;
+    color: #0fd608;
+  }
+  
+  .email-thank {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  
+    background: #ffffff;
+    transform: translate3d(100%, 0, 0);
+    transition: all 0.35s ease-out;
+  }
+  .email-thank--success {
+    transform: translate3d(0, 0, 0);
+  }
+  .email-thank__title {
+    color: #1b1b1b;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 1.5rem 0 1rem 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out 0.4s;
+  }
+  .email-thank__message {
+    width: 80%;
+    margin: 0 1rem;
+  
+    color: #1b1b1b;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.1;
+    letter-spacing: 1px;
+  
+    opacity: 0;
+    transition: opacity 0.1s linear;
+  }
+  .email-thank--success .email-thank__title,
+  .email-thank--success .email-thank__message {
+    opacity: 1;
+  }
+  
+  
+  /* ========================================================== */
+  /* Email Modal End Here*/
+  /* ========================================================== */
+  
 
 /* styling the first section of the page */
 .left-column h3 {
@@ -147,3 +362,14 @@ footer, .navbar, .navbar a, .navbar input[type=text] {
       border: 1px solid #ccc;
     }
 }
+@media (max-width: 40em) {
+    .email-modal__container {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .email-modal__side-img img {
+      display: none;
+    }
+  }
