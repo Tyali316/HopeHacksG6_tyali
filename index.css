@@ -6,7 +6,7 @@
   --navBarActive: #415d43;
   --bodyBackground: #b0bea9;
   --footerFont: #fefae0;
-  --buttonHover: rgba(253, 245, 192,0.75); 
+  --buttonHover: rgba(253, 245, 192,0.75);
 }
 body {
     padding: 20px;
@@ -88,8 +88,9 @@ body {
     z-index: 2;
     cursor: pointer;
   
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #b0bea9;
+    
+    color: black;
   
     border-radius: 50px;
     border: 2px solid #ffffff;
@@ -106,7 +107,7 @@ body {
   }
   
   .email-modal__container {
-    background: #ffffff;
+    background: #709775;
     max-width: 700px;
     width: 100%;
     color: #000000;
@@ -175,7 +176,7 @@ body {
   .email-modal__error-message {
     display: none;
     margin-bottom: 0.7rem;
-  
+    
     color: #b42f0d;
     font-size: 1rem;
     font-weight: 600;
@@ -314,6 +315,7 @@ footer {
   border-radius: 0.5rem;
   text-align: center;
 }
+
 .footer-extra {
     display: grid;
     row-gap: 5px;
@@ -373,3 +375,4 @@ footer, .navbar, .navbar a, .navbar input[type=text] {
       display: none;
     }
   }
+  
