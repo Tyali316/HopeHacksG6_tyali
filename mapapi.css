@@ -118,7 +118,7 @@
   
   #map {
     height: 400px;
-    width: 96.5%;
+    width: 500px;
     padding: 2rem;
     margin-right: auto;
     margin-left: auto;
@@ -126,10 +126,7 @@
   }
   
   .sectionMap-container {
-    grid-area: sectionMap;
     text-align: center;
-    padding: 2rem;
-    padding-top: 8rem;
   }
   
   .sectionMap-container h2 {
