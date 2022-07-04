@@ -9,7 +9,7 @@
   --buttonHover: rgba(253, 245, 192,0.75);
 }
 body {
-    padding:20px;
+    padding: 20px;
     background: var(--bodyBackground);
     font-family: sans-serif;
 }
