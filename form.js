@@ -1,22 +1,22 @@
-const name = document.getElementById('name')
+const name1 = document.getElementById('name')
 const phone = document.getElementById('phone')
 const email = document.getElementById('email')
 const form = docuement.getElementById('form')
 const submit = document.getElementById('submit')
 const errorElement = document.getElementById('error')
 
-submit.preventDefault()
+
 
 form.addEventListener('submit', (e) => {
-    let messages = [];
-    if (name.value === '' || name.value == null){
+    let messages = []
+    if (name1.value === '' || name1.value == null){
         messages.push('Name is required')
     }
     if (phone.value === phone.value || phone.value == null){
         messages.push('Name is required')
     }
     if (email.value.length <= 10) {
-        email.push('Email must be longer than 10 characters')
+        messages.push('Email must be longer than 10 characters')
     }
     if (form.value === '' || form.value == null){
         messages.push('Name is required')
@@ -24,6 +24,5 @@ form.addEventListener('submit', (e) => {
     if(messages.length > 0){
         e.preventDefault()
         errorElement.innerText = messages.join(', ')
-    }
-    
+    }    
 })
