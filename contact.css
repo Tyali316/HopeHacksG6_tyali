@@ -29,8 +29,26 @@ body {
   text-decoration: none;
   font-size: 18px;
 }
+/* Style inputs, select elements and textareas */
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.contact_form #form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
 /* navbar search input styling */
-.navbar input[type="text"] {
+.navbar input[type="search"] {
     float: right;
     padding: 6px;
     border:none;
@@ -62,16 +80,6 @@ h2, p {
     margin-right: 60px;
     margin-left: 50px;
     resize:horizontal;
-}
-
-/* Style inputs, select elements and textareas */
-input[type=text], textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
 }
 
 /* Style the label to display next to the inputs */
