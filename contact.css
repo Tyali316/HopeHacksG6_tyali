@@ -116,7 +116,6 @@ label {
     background-color: var(--buttonHover);
 }
 
-
 /* Clear floats after the columns */
 input[type="text"]:after {
     content: "";
@@ -125,40 +124,28 @@ input[type="text"]:after {
 }
   
 footer {
-    margin-top: 25px;
+    margin-top: 50px;
     width: 100%;
     height: 140px;
     background: var(--navBarBackg);
     overflow: hidden;
     border-radius: 0.5rem;
     text-align: center;
+    font-size: 8px;
 }
 .footer-extra {
       display: grid;
-      row-gap: 5px;
+      row-gap: 2px;
       text-align: center;
       margin-left: 80%;
 }
-   
+
 .footer-extra a {
-      text-decoration: none;
-      font-size: 10px;
-      color:var(--footerFont);
+    text-decoration: none;
+    font-size: 10px;
+    color:var(--footerFont);
 }
-  
-footer h4 {
-      text-align: left;
-      margin-left: 10px;
-      font-size: 15px;
-}
-  
-footer p {
-      text-align: left;
-      display: block;
-      font-size: 8px;
-}
-  
-  
+
   /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
       .left-column, .right-column {
