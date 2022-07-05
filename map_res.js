@@ -5,7 +5,7 @@ function initMap() {
     // Map options
     const options = {
         zoom: 11.6,
-        center: { lat: 35.227085, lng: -80.843124 }
+        center: { lat: 37.54632488441829, lng: -77.43585368826122 }
     }
 
     // Creating a new map
