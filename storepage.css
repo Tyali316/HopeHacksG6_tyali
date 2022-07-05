@@ -1,0 +1,125 @@
+
+:root {
+    --navBarBackg:#709775;
+    --navBarHover: #111d13;
+    --navBarFont: #f1f7ee;
+    --navBarActive: #415d43;
+    --bodyBackground: #b0bea9;
+    --footerFont: #fefae0;
+    --buttonHover: rgba(253, 245, 192,0.75); 
+}
+body {
+    padding: 20px;
+    background: var(--bodyBackground);
+    font-family: sans-serif;
+}
+/* navbar style */
+.navbar {
+    background-color: var(--navBarBackg);
+    overflow: hidden;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+/* navbar font styling */
+.navbar a {
+  color: var(--navBarFont);
+  float: left;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* navbar search input styling */
+.navbar input[type="search"] {
+    float: right;
+    padding: 6px;
+    border:none;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 17px;
+    border-radius: 0.5rem;
+}
+/* Change the color of linked html pages on hover */
+.navbar a:hover {
+    background-color: var(--navBarHover);
+    color: var(--navBarFont);
+}
+  
+  /* Add a color to the active/current link */
+.navbar a.active {
+    background-color: var(--navBarActive);
+    color: var(--navBarFont);
+}
+h2, h4 {
+    text-align: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-bottom: 80px;
+}
+
+.card img {
+    object-fit: contain;
+}
+.price {
+    color: grey;
+    font-size: 22px;
+}
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+.bottom-footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    background: var(--navBarBackg);
+    overflow: hidden;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 12px;
+}
+#footer-info {
+      display: grid;
+      text-align: center;
+      
+}
+
+#footer-info a {
+    text-decoration: none;
+    color:var(--footerFont);
+}
+
+@media screen and (max-width: 600px) {
+    footer,.store-item, .navbar, .navbar a, .navbar input[type=search] {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 12px;
+          text-align: center;
+    }
+  .navbar input[type=text] {
+          border: 1px solid #ccc;
+    }
+}
